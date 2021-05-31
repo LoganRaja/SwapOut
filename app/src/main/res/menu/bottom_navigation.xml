@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/zoom"
+        android:icon="@drawable/ic_zoom_in_white_24dp"
+        android:title="@string/zoom" />
+    <item
+        android:id="@+id/eraser"
+        android:icon="@drawable/eraser"
+        android:title="@string/eraser" />
+
+    <item
+        android:id="@+id/flip"
+        android:icon="@drawable/select_fg"
+        android:title="@string/flip" />
+
+    <item
+        android:id="@+id/hue_sat"
+        android:icon="@drawable/ic_tune_white_24dp"
+        android:title="@string/h_s" />
+    <item
+        android:id="@+id/add_bg"
+        android:icon="@drawable/ic_add_a_photo_white_24dp"
+        android:title="@string/add_image" />
+
+
+</menu>

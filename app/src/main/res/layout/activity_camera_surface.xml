@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fullLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame">
+
+        <com.wonderkiln.camerakit.CameraView
+            android:id="@+id/camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            app:ckZoom="pinch"
+            app:ckFocus="tapWithMarker"
+            app:ckPermissions="picture"
+            android:background="@color/colorGray"
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"/>
+
+
+    </FrameLayout>
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/capture_layout"
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_height="150dp"
+    android:background="#55000000"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/flash"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/frame"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/flash_auto"
+            android:paddingVertical="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/capture"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/frame"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/camera_click_icon_21" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/facing_change"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/camera_front_and_back"
+            android:layout_above="@+id/frame"
+            android:layout_gravity="center"
+            android:paddingVertical="10dp"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+</RelativeLayout>

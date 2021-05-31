@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.digiryte.swapout.ImageSelectActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/imgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:transitionName="SwapOutLogo"
+        android:layout_weight="5"
+        android:background="@drawable/red_bar"
+        android:padding="16dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SwapOut"
+            android:textColor="@color/colorWhite"
+            android:gravity="bottom|center_horizontal"
+            android:textSize="30dp"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="2">
+    <ImageView
+        android:id="@+id/camera"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/camera"/>
+    <ImageView
+        android:id="@+id/gallery"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/gallery"
+        />
+</LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

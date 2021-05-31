@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/about_us"
+            android:icon="@drawable/ic_people_white_24dp"
+            android:title="@string/about_us" />
+        <item
+            android:id="@+id/t_a_c"
+            android:icon="@drawable/ic_receipt_white_24dp"
+            android:title="@string/t_a_c" />
+        <item
+            android:id="@+id/p_p"
+            android:icon="@drawable/ic_lock_white_24dp"
+            android:title="@string/p_p" />
+        <item
+            android:id="@+id/i_a_b"
+            android:icon="@drawable/ic_action_googleplay_icon"
+            android:title="@string/i_a_b" />
+
+    </group>
+
+
+
+</menu>
